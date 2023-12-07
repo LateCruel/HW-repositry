@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Įnešti grynuosius į banko sąskaitą</title>
+    <link rel="stylesheet" href="deposit.css">
+</head>
+<body>
+    <div class="atm">
+        <div class="display">
+            <div id="message">Įveskite sumą:</div>
+            <input type="number" id="depositAmount" placeholder="Suma" required>
+            <button onclick="deposit()">Įnešti į sąskaitą</button>
+            <button onclick="navigateBack()">Atgal</button>
+        </div>
+    </div>
+    <script src="deposit.js"></script>
+</body>
+</html>

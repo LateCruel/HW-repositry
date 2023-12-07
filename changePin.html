@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keisti PIN kodą</title>
+    <link rel="stylesheet" href="pin.css">
+</head>
+<body>
+    <div class="atm">
+        <div class="begin-message">
+            <div id="message">Įveskite naują PIN kodą:</div>
+        </div>
+        <div class="display">
+            <input id="pinInput" type="password" readonly>
+            <button id="backspaceButton" onclick="backspace()">Backspace</button>
+        </div>
+        <div class="keypad">
+            <button onclick="enterDigit(1)">1</button>
+            <button onclick="enterDigit(2)">2</button>
+            <button onclick="enterDigit(3)">3</button>
+            <button onclick="enterDigit(4)">4</button>
+            <button onclick="enterDigit(5)">5</button>
+            <button onclick="enterDigit(6)">6</button>
+            <button onclick="enterDigit(7)">7</button>
+            <button onclick="enterDigit(8)">8</button>
+            <button onclick="enterDigit(9)">9</button>
+            <button onclick="enterDigit(0)">0</button>
+            <button onclick="changePin()">Pakeisti PIN</button>
+            <button onclick="goBack()">Atgal</button>
+        </div>
+    </div>
+    <script src="changePin.js"></script>
+</body>
+</html>

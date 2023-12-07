@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankomato Vartotojo Sąsaja</title>
+    <link rel="stylesheet" href="navigate.css">
+</head>
+<body>
+    <div class="atm">
+        <div class="display">
+            <div id="message">Pasirinkite veiksmą:</div>
+        </div>
+        <div class="keypad">
+            <button onclick="checkBalance()">1. Sąskaitos likutis</button>
+            <button onclick="loadWithdrawPage()">2. Grynųjų pinigų išsiėmimas</button>
+            <button onclick="navigate('deposit.html')">3. Įnešti grynuosius į banko sąskaitą</button>
+            <button onclick="navigate('changePin.html')">4. PIN kodo keitimas</button>
+            <button onclick="ejectCard()">5. Grąžinti kortelę</button>
+        </div>
+    </div>
+    <script src="navigate.js"></script>
+</body>
+</html>
